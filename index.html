@@ -1,7 +1,107 @@
-<!DOCTYPE   HTML>
-<html>
-  <body> 
-  <h1>Hello World</h1>
-    <p>I'm Hosted with Github Pages.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cybersecurity by Yazeed</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0d0f12;
+      color: #e6e6e6;
+      font-family: 'Space Mono', monospace;
+      line-height: 1.6;
+    }
+    a { color: #39ff14; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      text-align: center; padding: 4rem 1rem;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+    h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    p.subtitle { font-size: 1.2rem; color: #9a9a9a; }
+
+    /* Navigation */
+    nav {
+      position: fixed; top: 0; width: 100%; background: rgba(13,15,18,0.9);
+      padding: 0.5rem 1rem; display: flex; justify-content: center; gap: 2rem;
+      backdrop-filter: blur(5px);
+    }
+    nav a { font-weight: bold; }
+
+    /* Sections */
+    section {
+      max-width: 800px; margin: 2rem auto; padding: 0 1rem;
+    }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1.5rem; }
+    .card {
+      background: #1a1c20; padding: 1.5rem; border-radius: 0.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+    .card h3 { margin-bottom: 0.5rem; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 1rem;
+      font-size: 0.9rem; color: #777;
+    }
+
+    /* Glow animation */
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14; }
+      to   { text-shadow: 0 0 20px #39ff14, 0 0 30px #39ff14; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Yazeed’s Cybersecurity Lab</h1>
+    <p class="subtitle">Pen‑testing, CTF write‑ups &amp; security tools</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Yazeed—ethical hacker and security researcher. I break things so you don’t have to. Here you’ll find my latest write‑ups, tools, and tutorials on network, web, and binary exploitation.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="features">
+      <div class="card">
+        <h3>CTF Write‑Ups</h3>
+        <p>Step‑by‑step walkthroughs of my favorite CTF challenges.</p>
+      </div>
+      <div class="card">
+        <h3>Pentest Toolkit</h3>
+        <p>A collection of Bash &amp; Python scripts to automate common security tasks.</p>
+      </div>
+      <div class="card">
+        <h3>Blog</h3>
+        <p>Security articles, tooling reviews, and career advice for aspiring pentesters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yazeed1998">github.com/yazeed1998</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yazeed. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
+
